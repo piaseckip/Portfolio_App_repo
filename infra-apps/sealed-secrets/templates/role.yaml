@@ -26,6 +26,7 @@ rules:
       - secrets
     verbs:
       - create
+      - watch
       - list
   {{- if .Values.rbac.keyAdmin.rules }}
   {{- include "common.tplvalues.render" ( dict "value" .Values.rbac.keyAdmin.rules "context" $ ) | nindent 2 }}
