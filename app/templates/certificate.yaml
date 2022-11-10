@@ -1,0 +1,12 @@
+# apiVersion: cert-manager.io/v1
+# kind: Certificate
+# metadata:
+#   name: portfolio-cert-tls
+#   namespace: default 
+# spec:
+#   dnsNames:
+#     - portfolio-pp.ddns.net
+#   secretName: portfolio-cert-tls
+#   issuerRef:
+#     name: letsencrypt-prod
+#     kind: Issuer
