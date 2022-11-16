@@ -246,7 +246,7 @@ controller:
     externalTrafficPolicy: Local
 
     ## The annotations of the Ingress Controller service.
-    annotations: |
+    annotations: 
       external-dns.alpha.kubernetes.io/hostname: portfolio-pp.ddns.net
 
     ## The extra labels of the service.
