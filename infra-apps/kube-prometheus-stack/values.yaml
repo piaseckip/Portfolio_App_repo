@@ -771,7 +771,7 @@ grafana:
     ##
     tls: []
     # - secretName: grafana-general-tls
-    #   hosts:
+    #   hosts:portfolio-app-of-apps
     #   - grafana.example.com
 
   sidecar:
@@ -2077,7 +2077,7 @@ prometheus:
 
     ## Service type
     ##
-    type: ClusterIP
+    type: LoadBalancer
 
     ## Additional port to define in the Service
     additionalPorts: []
