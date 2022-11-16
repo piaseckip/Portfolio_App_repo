@@ -5,7 +5,7 @@
 #   namespace: default 
 # spec:
 #   dnsNames:
-#     - portfolio-pp.ddns.net
+#     - portfolio-pp.click
 #   secretName: portfolio-cert-tls
 #   issuerRef:
 #     name: letsencrypt-prod

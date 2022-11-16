@@ -247,7 +247,7 @@ controller:
 
     ## The annotations of the Ingress Controller service.
     annotations: 
-      external-dns.alpha.kubernetes.io/hostname: portfolio-pp.ddns.net
+      external-dns.alpha.kubernetes.io/hostname: portfolio-pp.click
 
     ## The extra labels of the service.
     extraLabels: {}
