@@ -10,7 +10,13 @@ spec:
       name: letsencrypt-prod
     server: https://acme-v02.api.letsencrypt.org/directory
     solvers:
-    - http01:
-        ingress:
-          class: nginx
+      - dns01:
+          route53:
+            region: eu-west-3
+            role: arn:aws:iam::644435390668:role/Piotrek_Role
+
+
+    # - http01:
+        # ingress:
+        #   class: nginx
           # name: app-nginx
