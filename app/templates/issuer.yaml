@@ -14,7 +14,12 @@ spec:
           route53:
             region: eu-west-3
             hostedZoneID: Z07723113SLTCXLJ17G7M
+            accessKeyID: AKIAZMC2XWDGG5MMFEGT
             role: arn:aws:iam::644435390668:role/Piotrek_Role
+            secretAccessKeySecretRef:
+              name: key
+              key: key
+
 
 
     # - http01:
