@@ -57,7 +57,7 @@ ingress:
             port:
               number: 80
   annotations: 
-    # kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
     cert-manager.io/issuer: letsencrypt-prod
     # acme.cert-manager.io/http01-ingress-class: nginx
