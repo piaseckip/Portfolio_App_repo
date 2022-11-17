@@ -87,7 +87,7 @@ aws:
 
   ## AWS region
   ##
-  region: "us-east-1"
+  region: "eu-west-3"
   ## Zone Filter. Available values are: public, private
   ##
   zoneType: ""
@@ -325,7 +325,7 @@ policy: sync
 registry: "txt"
 ## TXT Registry Identifier
 ##
-txtOwnerId: "Z0129877T1A2UQPT3JRO"
+txtOwnerId: "Z07723113SLTCXLJ17G7M"
 ## Prefix to create a TXT record with a name following the pattern prefix.<CNAME record>
 ##
 # txtPrefix: ""
