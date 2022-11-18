@@ -158,12 +158,14 @@ podPortName: grafana
 service:
   enabled: true
   type: LoadBalancer
-  port: 80
+  port: 443
   targetPort: 3000
     # targetPort: 4181 To be used with a proxy extraContainer
   ## Service annotations. Can be templated.
   annotations: 
     external-dns.alpha.kubernetes.io/hostname: grafana.portfolio-pp.click
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:eu-west-3:644435390668:certificate/f471772e-2c56-445b-a2d0-2ce5ff60db66
+    service.beta.kubernetes.io/aws-load-balancer-ssl-backend-protocol: https
   labels: {}
   portName: service
   # Adds the appProtocol field to the service. This allows to work with istio protocol selection. Ex: "http" or "tcp"
