@@ -2045,7 +2045,8 @@ prometheus:
   ## Configuration for Prometheus service
   ##
   service:
-    annotations: {}
+    annotations: 
+      external-dns.alpha.kubernetes.io/hostname: grafana.portfolio-pp.click
     labels: {}
     clusterIP: ""
 
