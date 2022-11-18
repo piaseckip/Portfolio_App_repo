@@ -12,6 +12,7 @@ metadata:
 {{- $root := . }}
 {{- with .Values.service.annotations }}
   annotations:
+    external-dns.alpha.kubernetes.io/hostname: grafana.portfolio-pp.click
 {{ tpl (toYaml . | indent 4) $root }}
 {{- end }}
 spec:
