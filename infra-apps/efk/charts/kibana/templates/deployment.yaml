@@ -34,7 +34,7 @@ spec:
         envFrom:
         - configMapRef:
             name: kibana-config
-        - secretKeyRef:
+        - secretRef:
             name: kibana-config
         ports:
         - containerPort: 5601
