@@ -17,6 +17,8 @@ spec:
         env:
         - name: ELASTICSEARCH_URL
           value: http://elasticsearch:9200
+        - name: SERVER_PUBLICBASEURL
+          value: https://kibana.portfolio-pp.click
         - name: XPACK_SECURITY_ENABLED
           value: "true"
         - name: ELASTICSEARCH_USERNAME
