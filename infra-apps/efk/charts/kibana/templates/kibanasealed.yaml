@@ -1,0 +1,17 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: kibana-config
+  namespace: default
+spec:
+  encryptedData:
+    elasticsearch_password: AgDGCFP9Azca/5cbvLmH+d9aSshYjYS3s/EF1CjiLoKLp3zBVtwCeFDH9Dg3Ua7/kSEytZGHGr0Jc6o6OocmpUudIx7N4okyiICN583oh8k8jZRwtqIEdrVohrxGVdHCM0TjOgOE6qxqjPJ4ICP4P/izH8K0i8crUJoOGxdYD9P4bveFefiVTubNr79n9jHLYy6ktqwCcL6JvWwSaxALNTfBrXqy/7ZSjF8yg3oTv/FPTVBgVk9s7opT5wnXTlXcIX+fGK/urbNxQ57SsWoPZYNoEPEUW+lrrU8eK0eEwTr96xpXSOuzBszcDF89g/eBr4DUZMiA7Z4K5zvz/j7HEXy+sE8EuAd56ey4bOQBPewKCOWbi4LB28KRBDo0J9cZz7c5E/cSnLfnh/0FUcmtEw83FTXrKgq7dCQxbIdK5uOwZXxembs5ZwP9H/Eip+eFcOduPJ6kLriL6dUHQHYhg811/zQzHzpxJfdPHKsl+hdtHdxd7z/TNYcy/356T2Y4Q3duY0t50UdlJhkMdmuiMmWey+oidPa0UuG+WFCZdHmNecZ18Eq+Vrnox59LAqc7uto5CxfSzLwJ1a/jvpuR4YKw68lDufF4WFrNtbzhy/ce2vPKlGGFP0g9BNGJtgTsxF1VQb1pG0ALEyGQ5Pyi4K4gIwdefV9qGn8oR9aBFeBNpOFLOjbAEiJiQFlvWGTTxfgxPrjyxjrhhA==
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      name: kibana-config
+      namespace: default
+    type: Opaque
+
