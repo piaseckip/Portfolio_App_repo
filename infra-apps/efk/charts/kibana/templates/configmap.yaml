@@ -6,4 +6,3 @@ metadata:
     component: kibana
 data:
   elasticsearch_username: elastic
-  elasticsearch_password: password
