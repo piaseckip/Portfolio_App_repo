@@ -2684,7 +2684,7 @@ prometheus:
     ## port to 2379 and allow etcd scraping provided it is running on all Kubernetes master nodes
     ##
     additionalScrapeConfigs: 
-      - job_name: nginx-test
+      - job_name: nginx
         honor_timestamps: true
         scrape_interval: 1m
         scrape_timeout: 1m
@@ -2693,6 +2693,16 @@ prometheus:
         static_configs:
         - targets:
           - ingress-prometheus.default.svc.cluster.local:80
+      - job_name: flask
+        honor_timestamps: true
+        scrape_interval: 1m
+        scrape_timeout: 1m
+        metrics_path: /metrics
+        scheme: http
+        static_configs:
+        - targets:
+          - flask-prometheus.default.svc.cluster.local:80
+        
     # - job_name: kube-etcd
     #   kubernetes_sd_configs:
     #     - role: node

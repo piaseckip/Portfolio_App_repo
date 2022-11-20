@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-prometheus
+  namespace: default
+spec:
+  ports:
+  - name: flask-prometheus
+    port: 80
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: app-flask-app
+  type: ClusterIP
