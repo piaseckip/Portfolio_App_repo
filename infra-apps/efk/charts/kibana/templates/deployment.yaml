@@ -49,5 +49,5 @@ spec:
           protocol: TCP
         volumes:
       - name: kibana-data
-        persistentVolumeClaim:
-          claimName: kibana-vol
+          persistentVolumeClaim:
+            claimName: kibana-vol
