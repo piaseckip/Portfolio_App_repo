@@ -47,3 +47,7 @@ spec:
         - containerPort: 5601
           name: http
           protocol: TCP
+        volumes:
+      - name: kibana-data
+        persistentVolumeClaim:
+          claimName: kibana-vol
